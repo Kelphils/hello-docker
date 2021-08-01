@@ -7,19 +7,19 @@ orbs:
 	# See the orb documentation here: https://circleci.com/developer/orbs/orb/circleci/python
 	python: circleci/python@1.2
 
-			- run:
-					name: Install Dependecies
-					command: |
-						python3 -m venv ~/.hello
-						source ~/.hello/bin/activate
-						make install
-						
-			- run:
-					name: Run lint
-					command: |
-						python3 -m venv ~/.hello
-						source ~/.hello/bin/activate
-						make lint
+		- run:
+				name: Install Dependecies
+				command: |
+					python3 -m venv ~/.hello
+					source ~/.hello/bin/activate
+					make install
+					
+		- run:
+				name: Run lint
+				command: |
+					python3 -m venv ~/.hello
+					source ~/.hello/bin/activate
+					make lint
 						
 # workflows:
 #   sample:  # This is the name of the workflow, feel free to change it to better match your workflow.
