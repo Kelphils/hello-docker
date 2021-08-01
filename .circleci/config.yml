@@ -39,13 +39,14 @@ workflows:
       - run:
           name: Install Dependecies
           command: |
-          python3 -m venv venv
-          . venv/bin/activate
-          make install
+            python3 -m venv venv
+            . venv/bin/activate
+            make install
 
       - run:
           name: Run lint
           command: |
-          python3 -m venv venv
-          . venv/bin/activate
-          make lint
+            python3 -m venv venv
+            . venv/bin/activate
+            make lint
+
